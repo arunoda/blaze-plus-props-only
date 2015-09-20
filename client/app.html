@@ -1,0 +1,12 @@
+<body>
+  {{> App}}
+</body>
+
+<template name="App">
+  <!-- This is the starting point of the Magic functionality -->
+  {{>$ template="Welcome" user=prop$getUser}}
+</template>
+
+<template name="Welcome">
+  <span>Hello, </span> {{getName}}
+</template>
